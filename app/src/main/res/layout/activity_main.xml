@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.MainActivity"
+  android:background="@color/black">
+
+  <EditText
+    android:id="@+id/edit_length"
+    style="@style/EditTextOuterStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="@string/length"
+    android:imeOptions="actionNext"
+    android:nextFocusDown="@id/edit_width"
+    app:layout_constraintEnd_toStartOf="@id/edit_width"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/text_result" />
+
+  <EditText
+    android:id="@+id/edit_width"
+    style="@style/EditTextInnerStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="@string/width"
+    android:nextFocusDown="@id/edit_height"
+    app:layout_constraintEnd_toStartOf="@id/edit_height"
+    app:layout_constraintStart_toEndOf="@id/edit_length"
+    app:layout_constraintTop_toBottomOf="@id/text_result" />
+
+  <EditText
+    android:id="@+id/edit_height"
+    style="@style/EditTextInnerStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="@string/height"
+    android:nextFocusDown="@id/edit_quantity"
+    app:layout_constraintEnd_toStartOf="@id/edit_quantity"
+    app:layout_constraintStart_toEndOf="@id/edit_width"
+    app:layout_constraintTop_toBottomOf="@id/text_result" />
+
+  <EditText
+    android:id="@+id/edit_quantity"
+    style="@style/EditTextOuterStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="@string/quantity"
+    android:imeOptions="actionDone"
+    android:maxLength="3"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/edit_height"
+    app:layout_constraintTop_toBottomOf="@id/text_result" />
+
+  <TextView
+    android:id="@+id/text_result"
+    style="@style/TextResultStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycler_construction"
+    style="@style/RecyclerStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/f_btn_add" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/f_btn_clear"
+    style="@style/FloatingButtonOuterStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/clear"
+    app:layout_constraintEnd_toStartOf="@id/f_btn_help"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/edit_quantity"
+    app:maxImageSize="56dp"
+    app:tint="@null" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/f_btn_help"
+    style="@style/FloatingButtonInnerStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/help"
+    app:layout_constraintEnd_toStartOf="@id/f_btn_manual"
+    app:layout_constraintStart_toEndOf="@id/f_btn_clear"
+    app:layout_constraintTop_toBottomOf="@id/edit_quantity"
+    app:maxImageSize="56dp"
+    app:tint="@null" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/f_btn_manual"
+    style="@style/FloatingButtonInnerStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/m3"
+    app:layout_constraintEnd_toStartOf="@id/f_btn_add"
+    app:layout_constraintStart_toEndOf="@id/f_btn_help"
+    app:layout_constraintTop_toBottomOf="@id/edit_quantity"
+    app:maxImageSize="56dp"
+    app:tint="@null" />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/f_btn_add"
+    style="@style/FloatingButtonOuterStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/add"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@id/f_btn_manual"
+    app:layout_constraintTop_toBottomOf="@id/edit_quantity"
+    app:maxImageSize="56dp"
+    app:tint="@null" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

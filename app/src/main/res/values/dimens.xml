@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="my_value">16dp</dimen>
+
+  <item name="edit_margin_top" type="dimen">16dp</item>
+  <item name="edit_margin_inner" type="dimen">4dp</item>
+  <item name="edit_margin_outer" type="dimen">8dp</item>
+  <item name="edit_text_size" type="dimen">20sp</item>
+
+  <item name="result_text_size" type="dimen">25sp</item>
+  <item name="result_margin_hor" type="dimen">8dp</item>
+  <item name="result_margin_ver" type="dimen">4dp</item>
+
+  <item name="button_text_size" type="dimen">14sp</item>
+  <item name="button_margin_top" type="dimen">4dp</item>
+  <item name="button_margin_bottom" type="dimen">8dp</item>
+  <item name="button_margin_hor" type="dimen">8dp</item>
+
+  <item name="recycler_header_paddingEnd" type="dimen">8dp</item>
+  <item name="recycler_header_paddingStart" type="dimen">8dp</item>
+  <item name="recycler_header_minHeight" type="dimen">15dp</item>
+
+  <item name="recycler_body_paddingEnd" type="dimen">8dp</item>
+  <item name="recycler_body_paddingStart" type="dimen">8dp</item>
+  <item name="recycler_margin_vertical" type="dimen">8dp</item>
+  <item name="recycler_body_minHeight" type="dimen">15dp</item>
+  <item name="recycler_text_size" type="dimen">17sp</item>
+  
+  <item name="floating_margin_vertical" type="dimen">8dp</item>
+  <item name="floating_margin_outer" type="dimen">8dp</item>
+  <item name="floating_margin_inner" type="dimen">8dp</item>
+</resources>
+

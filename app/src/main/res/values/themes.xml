@@ -1,0 +1,89 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!-- Base application theme. -->
+  <style name="Theme.Concrete" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/purple_500</item>
+    <item name="colorPrimaryVariant">@color/purple_700</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/teal_200</item>
+    <item name="colorSecondaryVariant">@color/teal_700</item>
+    <item name="colorOnSecondary">@color/black</item>
+    <!-- Status bar color. -->
+    <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    <!-- Customize your theme here. -->
+  </style>
+
+  <style name="FloatingButtonStyle" parent="TextAppearance.AppCompat">
+    <item name="android:backgroundTint">@color/black</item>
+    <item name="android:layout_marginTop">@dimen/floating_margin_vertical</item>
+    <item name="android:layout_marginBottom">@dimen/floating_margin_vertical</item>
+  </style>
+
+  <style name="FloatingButtonOuterStyle" parent="FloatingButtonStyle">
+
+  </style>
+
+  <style name="FloatingButtonInnerStyle" parent="FloatingButtonStyle">
+
+  </style>
+
+
+
+  <style name="RecyclerStyle" parent="TextAppearance.AppCompat">
+    <item name="android:textSize">@dimen/recycler_text_size</item>
+    <item name="android:layout_marginTop">@dimen/recycler_margin_vertical</item>
+  </style>
+
+  <style name="recyclerHeaderStyle" parent="RecyclerStyle">
+    <item name="android:paddingStart">@dimen/recycler_body_paddingStart</item>
+    <item name="android:paddingEnd">@dimen/recycler_body_paddingEnd</item>
+    <item name="android:minHeight">@dimen/recycler_body_minHeight</item>
+    <item name="android:layout_gravity">start</item>
+    <item name="android:gravity">center_vertical</item>
+  </style>
+
+  <style name="recyclerBodyStyle" parent="RecyclerStyle">
+    <item name="android:paddingStart">@dimen/recycler_header_paddingStart</item>
+    <item name="android:paddingEnd">@dimen/recycler_header_paddingEnd</item>
+    <item name="android:minHeight">@dimen/recycler_header_minHeight</item>
+    <item name="android:layout_gravity">start</item>
+    <item name="android:gravity">center_vertical</item>
+  </style>
+
+  <style name="ButtonStyle" parent="TextAppearance.AppCompat">
+    <item name="android:textSize">@dimen/button_text_size</item>
+    <item name="android:paddingStart">8dp</item>
+    <item name="android:paddingEnd">8dp</item>
+    <item name="android:layout_marginTop">@dimen/button_margin_top</item>
+    <item name="android:layout_marginStart">@dimen/button_margin_bottom</item>
+    <item name="android:layout_marginEnd">@dimen/button_margin_hor</item>
+  </style>
+
+  <style name="TextResultStyle" parent="TextAppearance.AppCompat">
+    <item name="android:textSize">@dimen/result_text_size</item>
+    <item name="android:layout_marginTop">@dimen/result_margin_ver</item>
+    <item name="android:layout_marginStart">@dimen/result_margin_hor</item>
+    <item name="android:layout_marginEnd">@dimen/result_margin_hor</item>
+    <item name="android:gravity">center_horizontal</item>
+  </style>
+
+  <style name="EditTextParent" parent="TextAppearance.AppCompat">
+    <item name="android:textSize">@dimen/edit_text_size</item>
+    <item name="android:inputType">number</item>
+    <item name="android:gravity">center</item>
+    <item name="android:maxLines">1</item>
+    <item name="android:maxLength">6</item>
+  </style>
+
+  <style name="EditTextOuterStyle" parent="EditTextParent">
+    <item name="android:layout_marginStart">@dimen/edit_margin_outer</item>
+    <item name="android:layout_marginEnd">@dimen/edit_margin_inner</item>
+  </style>
+
+  <style name="EditTextInnerStyle" parent="EditTextParent">
+    <item name="android:imeOptions">actionNext</item>
+    <item name="android:layout_marginStart">@dimen/edit_margin_inner</item>
+    <item name="android:layout_marginEnd">@dimen/edit_margin_inner</item>
+  </style>
+</resources>

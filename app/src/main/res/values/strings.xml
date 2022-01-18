@@ -1,0 +1,41 @@
+<resources>
+  <string name="app_name">Concrete</string>
+  <string name="concrete_calculation">Розрахунок бетону</string>
+  <string name="length">довжина</string>
+  <string name="width">ширина</string>
+  <string name="height">висота</string>
+  <string name="quantity">кількість</string>
+  <string name="total">"Загальний об'єм = </string>
+  <string name="cubic_meters"> м³</string>
+  <string name="total_zero_reserve">"Загальний об'єм = 0 м³</string>
+  <string name="construction">Конструкція</string>
+  <string name="add_construction">Додати конструкцію</string>
+  <string name="add_manually">Додати вручну</string>
+  <string name="wrong_data">Введіть розміри і кількість конструкцій</string>
+  <string name="wrong_volume">Не введено об\'єм конструкцій</string>
+  <string name="input_volume">Введіть об\'єм конструкції вручну</string>
+  <string name="volume">Об\'єм</string>
+  <string name="description">Опис (не обов\'язково)</string>
+
+  <string name="ask_clear_all">Очистити всі рядки?</string>
+  <string name="yes">Так</string>
+  <string name="no">Ні</string>
+
+  <string name="ok">Ок</string>
+  <string name="cancel">Відміна</string>
+
+  <string name="lorem_ipsum">Lorem ipsum dolor sit</string>
+  <string name="start_tip">Введіть розміри в міліметрах і кількість конструкцій</string>
+
+  <string name="header">Конструкція</string>
+  <string name="pieces"> шт</string>
+
+  <string name="tutorial1">Введіть розміри конструкцій в міліметрах</string>
+  <string name="tutorial2">Перехід між полями розмірів по \"Enter\"</string>
+  <string name="tutorial3">Додати конструкцію до списку - \"Enter\"</string>
+  <string name="tutorial4">або кнопка \"+\" </string>
+  <string name="tutorial5">Для додавання об\'єму без розмірів </string>
+  <string name="tutorial6">натиснути кнопку \"М³\"</string>
+  <string name="tutorial7">Для видалення конструкції свайп по рядку</string>
+  <string name="tutorial8">Для очищення всіх рядків - кнопка \"🗑\"</string>
+</resources>
